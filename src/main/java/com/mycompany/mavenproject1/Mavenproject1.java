@@ -5,7 +5,7 @@
 package com.mycompany.mavenproject1;
 
 import javax.swing.JFrame;
-import ui.Main;
+import ui.provider.UIProvider;
 
 /**
  *
@@ -14,7 +14,8 @@ import ui.Main;
 public class Mavenproject1 {
 
     public static void main(String[] args) {
-        JFrame main = new Main();
+        UIProvider uiProvider = new UIProvider();
+        JFrame main = uiProvider.getMainWindow();
         main.show();
-    }
+    } 
 }
