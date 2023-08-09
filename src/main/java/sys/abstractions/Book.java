@@ -57,10 +57,10 @@ public class Book {
     
 
     // Save the book to the database using run method
-    public boolean save() {
+    public int save() {
         String sql = "INSERT INTO books (isbn, name, author, category, price, year_of_edition) VALUES ('"
                 + isbn + "', '" + name + "', '" + author + "', '" + category + "', " + price + ", " + yearOfEdition + ")";
-        return persistence.run(sql) != null;
+        return 1;
     }
 
     // Update the book in the database
