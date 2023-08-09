@@ -4,17 +4,25 @@
  */
 package ui.components;
 
+import sys.abstractions.Session;
+
 /**
  *
  * @author martin
  */
 public class ClientWindow extends javax.swing.JFrame {
 
+    private Session session;
+
     /**
      * Creates new form ClientWindow
      */
     public ClientWindow() {
         initComponents();
+    }
+
+    public void setSession(Session session) {
+        this.session = session;
     }
 
     /**

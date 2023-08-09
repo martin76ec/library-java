@@ -16,8 +16,8 @@ import ui.components.LoginWindow;
 public class UIProvider {
     
     public JFrame getMainWindow() {
-        JFrame librarianWindow = new LibrarianWindow();
-        JFrame clientWindow = new ClientWindow();
+        LibrarianWindow librarianWindow = new LibrarianWindow();
+        ClientWindow clientWindow = new ClientWindow();
         return new LoginWindow(librarianWindow, clientWindow);
     }
 }
